@@ -14,8 +14,8 @@ public extension UITextField {
     func addDoneButtonInputView() {
         let toolbar = UIToolbar(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 44))
         toolbar.barStyle = .default
-        toolbar.barTintColor = Colors.grayDark.color
-        toolbar.tintColor = Colors.white.color
+        toolbar.barTintColor = UIColor.darkGray
+        toolbar.tintColor = UIColor.white
         toolbar.items = [
             UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil),
             UIBarButtonItem(barButtonSystemItem: .done, target: target, action: #selector(doneButtonAction))
@@ -33,8 +33,8 @@ public extension UITextField {
                                    maximumDate: Date? = nil) {
         let toolbar = UIToolbar(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 44))
         toolbar.barStyle = .default
-        toolbar.barTintColor = Colors.grayDark.color
-        toolbar.tintColor = Colors.white.color
+        toolbar.barTintColor = UIColor.darkGray
+        toolbar.tintColor = UIColor.white
         toolbar.items = [
             UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil),
             UIBarButtonItem(barButtonSystemItem: .done, target: target, action: selector)

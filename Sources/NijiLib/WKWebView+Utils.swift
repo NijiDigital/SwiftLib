@@ -33,17 +33,5 @@ public extension WKWebView {
         webView.scrollView.pinchGestureRecognizer?.isEnabled = false
         return webView
     }
-    
-    /// Load the media video from an URL
-    ///
-    /// - Parameter url: The video URL
-    func loadMediaVideo(with url: URL) {
-        guard let content = FileManager.default.contents(atPath: Files.mediaVideoHtml.path),
-              let template = String(data: content, encoding: .utf8) else {
-            return
-        }
-        let html = template.replacingOccurrences(of: "@IframeSrc", with: url.absoluteString)
-        loadHTMLString(html, baseURL: nil)
-    }
 }
 #endif

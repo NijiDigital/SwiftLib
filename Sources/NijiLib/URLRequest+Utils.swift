@@ -10,14 +10,6 @@ import Foundation
 
 /// Utility extension for `URLRequest`.
 public extension URLRequest {
-    /// Set the value of Authorization HTTPHeaderField.
-    ///
-    /// - Parameters:
-    ///    - authorization: The `HeaderFieldAuthorization` of  HTTPHeaderField
-    mutating func setAuthorization(_ authorization: HeaderFieldAuthorization) {
-        setValue(authorization.headerValue, forHTTPHeaderField: HeaderField.authorization)
-    }
-    
     /// Set the value of Content-Type HTTPHeaderField.
     ///
     /// - Parameters:
