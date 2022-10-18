@@ -28,5 +28,6 @@ let package = Package(
         .testTarget(
             name: "NijiLibTests",
             dependencies: ["NijiLib"]),
-    ]
+    ],
+    swiftLanguageVersions: [.v5]
 )

@@ -54,21 +54,5 @@ public extension UITextField {
         }
         inputView = datePicker
     }
-
-    func addLuckyDayPickerInputView<T>(target: T,
-                                       selector: Selector) {
-        let toolbar = UIToolbar(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 44))
-        toolbar.barStyle = .default
-        toolbar.barTintColor = Colors.grayDark.color
-        toolbar.tintColor = Colors.white.color
-        toolbar.items = [
-            UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil),
-            UIBarButtonItem(barButtonSystemItem: .done, target: target, action: selector)
-        ]
-        inputAccessoryView = toolbar
-
-        let datePicker = LuckyDayPickerView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 216))
-        inputView = datePicker
-    }
 }
 #endif

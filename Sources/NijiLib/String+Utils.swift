@@ -43,15 +43,5 @@ public extension String {
                                             context: nil)
         return ceil(boundingBox.height)
     }
-    
-    var luckyDateFormatted: String? {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "MM-dd"
-        if let date = formatter.date(from: self) {
-            formatter.dateFormat = "dd / MM"
-            return formatter.string(from: date)
-        }
-        return nil
-    }
 }
 #endif

@@ -1,10 +1,10 @@
 public struct NijiLib {
-    public private(set) var text = "Hello, World!"
+    public private(set) var text = "NijiLib linked successfully."
 
     public init() {
     }
     
-    public func printText() {
+    public func testingLib() {
         print(self.text)
     }
 }
