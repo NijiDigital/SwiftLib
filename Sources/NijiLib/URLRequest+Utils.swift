@@ -6,22 +6,10 @@
 //
 
 #if !os(macOS)
-import Environment
 import Foundation
 
 /// Utility extension for `URLRequest`.
 public extension URLRequest {
-    /// Set the value client-api-token HTTPHeaderField.
-    mutating func setLinkClientApiToken() {
-        setValue(Environment.current.link.apiToken, forHTTPHeaderField: HeaderField.linkClientApiToken)
-    }
-    
-    /// Set the value of id-token HTTPHeaderField.
-    mutating func setLinkIdToken(_ idToken: String) {
-        setValue(idToken, forHTTPHeaderField: HeaderField.linkTokenId)
-        setValue(Environment.current.reachFive.client, forHTTPHeaderField: HeaderField.linkClientId)
-    }
-    
     /// Set the value of Authorization HTTPHeaderField.
     ///
     /// - Parameters:

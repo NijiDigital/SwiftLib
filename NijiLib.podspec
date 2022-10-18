@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'NijiLib'
-  s.version          = '1.0.0'
+  s.version          = '0.0.1'
   s.summary          = 'Librairie de Niji pour les extensions courantes.'
   s.homepage         = 'https://gitlab.niji.fr/gcouarch/nijilib'
   s.license          = { :type => 'MIT', :file => 'LICENSE.md' }
