@@ -28,7 +28,9 @@ public extension UITextField {
     func addDatePickerInputView<T>(target: T,
                                    selector: Selector,
                                    minimumDate: Date? = nil,
-                                   maximumDate: Date? = nil) {
+                                   maximumDate: Date? = nil,
+                                   primaryColor: UIColor = UIColor.darkGray,
+                                   secondaryColor: UIColor = UIColor.white) {
         let toolbar = UIToolbar(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 44))
         toolbar.barStyle = .default
         toolbar.barTintColor = primaryColor
