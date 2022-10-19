@@ -6,6 +6,6 @@ final class NijiLibTests: XCTestCase {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct
         // results.
-        XCTAssertEqual(NijiLib().text, "Hello, World!")
+        XCTAssertEqual(NijiLib().text, "NijiLib linked successfully.")
     }
 }

@@ -8,8 +8,21 @@ import UIKit
 
 /// Utility extension for `String`.
 public extension String {
+    func capitalized() -> String {
+        prefix(1).uppercased() + dropFirst()
+    }
+
     func camelcased() -> String {
-        prefix(1).capitalized + dropFirst()
+        let source = lowercased()
+        let first = source[..<source.index(after: source.startIndex)]
+        if source.contains(" ") {
+            let connected = source.capitalized.replacingOccurrences(of: " ", with: "")
+            let camel = connected.replacingOccurrences(of: "\n", with: "")
+            let rest = String(camel.dropFirst())
+            return first + rest
+        }
+        let rest = String(source.dropFirst())
+        return first + rest
     }
 
     func chunkFormatted(withChunkSize chunkSize: Int = 2,
