@@ -1,8 +1,5 @@
 //
 //  UIDevice+Utils.swift
-//  Global
-//
-//  Created by Malek Mansour on 11/06/2022.
 //
 
 #if !os(macOS)

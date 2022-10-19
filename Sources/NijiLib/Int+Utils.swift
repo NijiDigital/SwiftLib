@@ -1,8 +1,5 @@
 //
 //  Int+Utils.swift
-//  Global
-//
-//  Created by Mathieu VIEL on 07/09/2022.
 //
 
 import Foundation

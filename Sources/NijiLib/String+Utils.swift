@@ -1,8 +1,5 @@
 //
 //  String+Utils.swift
-//  Global
-//
-//  Created by Nicolas RENAUD on 21/06/2022.
 //
 
 #if !os(macOS)

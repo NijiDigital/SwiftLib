@@ -1,8 +1,5 @@
 //
 //  UIViewController+Extension.swift
-//  Barriere
-//
-//  Created by Malek Mansour on 20/06/2022.
 //
 
 #if !os(macOS)

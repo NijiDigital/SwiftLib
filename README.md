@@ -32,7 +32,7 @@ let package = Package(
         "NijiLib",
     ]
 ),</code></pre>
-<p>Puis lancez <code>swift package update</code>.</p>
+<p>Puis lancez la commande <code>swift package update</code>.</p>
 </details>
 
 <details>
@@ -40,7 +40,7 @@ let package = Package(
 </br>
 <p>Pour intégrer NijiLib à votre projet Xcode en utilisant <a href="http://cocoapods.org">CocoaPods</a>, renseignez le dans votre <code>Podfile</code> :</p>
 <pre><code class="ruby language-ruby">pod 'NijiLib'</code></pre>
-<p> Warning : Pas encore disponible.</p>
+<p>Puis lancez la commande <code>pod install</code>.</p>
 </details>
 
 <details>
@@ -60,7 +60,6 @@ Importez la librairie dans le fichier dans lequel vous voulez avoir accès aux e
 Puis utilisez les extensions comme vous le feriez normalement si vous les aviez écrites dans votre fichier courrant.
 
 ## Roadmap 📆
- - Rendre la librairie accessible avec CocoaPods.
  - Peupler la librairie des extensions utiles.
  - Documenter et lister les extensions.
 
@@ -74,9 +73,8 @@ Il n'y a donc pas besoin de fork le projet, vous devriez avoir les droits dessus
 Un grand merci aux contributeurs du projet ! ❤️
 
 Liste des contributeurs : 
-- Contributeur1
-- lui
-- et lui aussi
+- Mathieu VIEL
+- Nicolas RENAUD
 
-## License 📝
-License à prévoir ici. MIT ?
+## Licence 📝
+NijiLib est soumis à la licence MIT. Voir la [licence](LICENSE.md) pour plus d'informations.

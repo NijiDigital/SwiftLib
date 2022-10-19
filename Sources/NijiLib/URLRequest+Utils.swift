@@ -1,8 +1,5 @@
 //
 //  URLRequest+Utils.swift
-//  Global
-//
-//  Created by Nicolas RENAUD on 14/04/2022.
 //
 
 #if !os(macOS)

@@ -1,8 +1,5 @@
 //
 //  UILabel+Utils.swift
-//  Global
-//
-//  Created by Aymen Ben Romdhane on 19/08/2022.
 //
 
 #if !os(macOS)

@@ -1,8 +1,5 @@
 //
 //  Collection+Utils.swift
-//  Global
-//
-//  Created by Aymen Ben Romdhane on 03/08/2022.
 //
 
 import Foundation

@@ -1,8 +1,5 @@
 //
 //  Constraints.swift
-//  Global
-//
-//  Created by Aymen Ben Romdhane on 29/07/2022.
 //
 
 #if !os(macOS)

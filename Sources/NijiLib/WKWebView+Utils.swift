@@ -1,8 +1,5 @@
 //
 //  WKWebView+Utils.swift
-//  Global
-//
-//  Created by Nicolas RENAUD on 30/08/2022.
 //
 
 #if !os(macOS)

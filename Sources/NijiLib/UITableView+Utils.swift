@@ -1,8 +1,5 @@
 //
 //  UITableView+Utils.swift
-//  Global
-//
-//  Created by Nicolas RENAUD on 01/08/2022.
 //
 
 #if !os(macOS)

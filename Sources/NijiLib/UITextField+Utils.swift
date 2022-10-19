@@ -1,8 +1,5 @@
 //
 //  UITextField+Utils.swift
-//  Global
-//
-//  Created by Nicolas RENAUD on 23/06/2022.
 //
 
 #if !os(macOS)
@@ -11,11 +8,12 @@ import UIKit
 
 /// Utility extension for `UITextField`.
 public extension UITextField {
-    func addDoneButtonInputView() {
+    func addDoneButtonInputView(primaryColor: UIColor = UIColor.darkGray,
+                                secondaryColor: UIColor = UIColor.white) {
         let toolbar = UIToolbar(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 44))
         toolbar.barStyle = .default
-        toolbar.barTintColor = UIColor.darkGray
-        toolbar.tintColor = UIColor.white
+        toolbar.barTintColor = primaryColor
+        toolbar.tintColor = secondaryColor
         toolbar.items = [
             UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil),
             UIBarButtonItem(barButtonSystemItem: .done, target: target, action: #selector(doneButtonAction))
@@ -33,8 +31,8 @@ public extension UITextField {
                                    maximumDate: Date? = nil) {
         let toolbar = UIToolbar(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 44))
         toolbar.barStyle = .default
-        toolbar.barTintColor = UIColor.darkGray
-        toolbar.tintColor = UIColor.white
+        toolbar.barTintColor = primaryColor
+        toolbar.tintColor = secondaryColor
         toolbar.items = [
             UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil),
             UIBarButtonItem(barButtonSystemItem: .done, target: target, action: selector)

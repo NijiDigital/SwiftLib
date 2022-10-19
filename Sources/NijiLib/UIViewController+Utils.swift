@@ -1,8 +1,5 @@
 //
 //  UIViewController+Utils.swift
-//  Global
-//
-//  Created by Nicolas RENAUD on 15/05/2022.
 //
 
 #if !os(macOS)

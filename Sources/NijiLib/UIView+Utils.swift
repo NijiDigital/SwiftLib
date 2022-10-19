@@ -1,8 +1,5 @@
 //
 //  UIView+Utils.swift
-//  Global
-//
-//  Created by Nicolas RENAUD on 15/10/2021.
 //
 
 #if !os(macOS)

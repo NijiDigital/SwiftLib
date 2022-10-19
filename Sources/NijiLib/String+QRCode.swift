@@ -1,8 +1,5 @@
 //
 //  String+QRCode.swift
-//  Global
-//
-//  Created by Nicolas RENAUD on 07/09/2022.
 //
 
 #if !os(macOS)

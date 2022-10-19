@@ -1,8 +1,5 @@
 //
 //  Array+Utils.swift
-//  Global
-//
-//  Created by Nicolas RENAUD on 13/06/2022.
 //
 
 import Foundation

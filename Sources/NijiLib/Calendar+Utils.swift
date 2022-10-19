@@ -1,8 +1,5 @@
 //
 //  Calendar+Utils.swift
-//  Global
-//
-//  Created by Nicolas RENAUD on 05/06/2022.
 //
 
 import Foundation
