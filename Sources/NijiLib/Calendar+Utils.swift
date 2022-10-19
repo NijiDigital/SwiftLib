@@ -32,9 +32,7 @@ public extension Calendar {
     func isDate(_ date1: Date, inSameYearAs date2: Date) -> Bool {
         component(.year, from: date1) == component(.year, from: date2)
     }
-}
-
-private extension Calendar {
+    
     func isFridayOrSaturday(date: Date) -> Bool {
         let weekday = component(.weekday, from: date)
         return weekday == 6 || weekday == 7
@@ -44,5 +42,9 @@ private extension Calendar {
         let day = component(.day, from: date)
         let month = component(.month, from: date)
         return day == 31 && month == 12
+    }
+
+    func numberOfDaysInMonth(for date: Date) -> Int {
+        return range(of: .day, in: .month, for: date)!.count
     }
 }
