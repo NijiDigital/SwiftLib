@@ -69,6 +69,11 @@ Tout le monde est invité à contribuer à ce projet en y ajoutant les extension
 Les contributions se font sur le principe de MR et doivent être approuvées par un pair avant d'être mergées. <br/>
 Il n'y a donc pas besoin de fork le projet, vous devriez avoir les droits dessus. Si ce n'est pas le cas, merci de vous tourner vers un admin du projet pour qu'il vous les donne.
 
+Pour tester les modifications de la librairie en direct, remplacez la ligne <code>pod 'NijiLib'</code> du <code>Podfile</code> de votre projet de test par :
+<pre><code class="ruby language-ruby">pod 'NijiLib', :path => '/Path/To/NijiLib'</code></pre>
+<p>Puis lancez la commande <code>pod install</code>.</p>
+Vous pourrez alors tester les modifications directement sans avoir besoin de push un nouveau tag.
+
 ## Auteurs et contributeurs 🖋
 Un grand merci aux contributeurs du projet ! ❤️
 
