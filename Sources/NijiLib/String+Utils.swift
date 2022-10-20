@@ -8,21 +8,31 @@ import UIKit
 
 /// Utility extension for `String`.
 public extension String {
+    func removeExtraSpaces() -> String {
+        replacingOccurrences(of: "[\\s\n]+",
+                             with: " ",
+                             options: .regularExpression,
+                             range: nil)
+    }
+
     func capitalized() -> String {
         prefix(1).uppercased() + dropFirst()
     }
 
     func camelcased() -> String {
-        let source = lowercased()
+        let source = lowercased().removeExtraSpaces()
         let first = source[..<source.index(after: source.startIndex)]
-        if source.contains(" ") {
-            let connected = source.capitalized.replacingOccurrences(of: " ", with: "")
-            let camel = connected.replacingOccurrences(of: "\n", with: "")
-            let rest = String(camel.dropFirst())
-            return first + rest
-        }
-        let rest = String(source.dropFirst())
+        let camel = source.capitalized.replacingOccurrences(of: " ", with: "")
+        let rest = String(camel.dropFirst())
         return first + rest
+    }
+
+    func snakecased() -> String {
+        lowercased().removeExtraSpaces().replacingOccurrences(of: " ", with: "_")
+    }
+
+    func pascalcased() -> String {
+        lowercased().removeExtraSpaces().capitalized.replacingOccurrences(of: " ", with: "")
     }
 
     func chunkFormatted(withChunkSize chunkSize: Int = 2,
