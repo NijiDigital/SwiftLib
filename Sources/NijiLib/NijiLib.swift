@@ -7,4 +7,8 @@ public struct NijiLib {
     public func testingLib() {
         print(self.text)
     }
+
+    public func madeToTestGitLabMirroringToGithub() {
+        // It actually does nothing tho.
+    }
 }
