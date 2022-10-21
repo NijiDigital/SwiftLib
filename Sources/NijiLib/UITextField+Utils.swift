@@ -54,5 +54,11 @@ public extension UITextField {
         }
         inputView = datePicker
     }
+    
+    func checkForCharacterLimit(_ limit: Int, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        let currentString: NSString = text! as NSString
+        let newString: NSString = currentString.replacingCharacters(in: range, with: string) as NSString
+        return newString.length <= limit
+    }
 }
 #endif

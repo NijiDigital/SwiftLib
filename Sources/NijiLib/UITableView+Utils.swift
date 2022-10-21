@@ -38,5 +38,9 @@ public extension UITableView {
             footer.frame.size.height = newSize.height
         }
     }
+
+    func isValid(indexPath: IndexPath) -> Bool {
+        indexPath.section < numberOfSections && indexPath.row < numberOfRows(inSection: indexPath.section)
+    }
 }
 #endif
