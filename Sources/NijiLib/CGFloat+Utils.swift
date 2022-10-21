@@ -1,9 +1,5 @@
 //
-//  CGFloat+Extension.swift
-//  PersoLips
-//
-//  Created by Satish Chauhan on 21/07/20.
-//  Copyright © 2020 L'Oréal. All rights reserved.
+//  CGFloat+Utils.swift
 //
 
 public extension CGFloat {

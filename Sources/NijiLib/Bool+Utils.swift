@@ -1,9 +1,5 @@
 //
-//  Bool+Extension.swift
-//  PersoLips
-//
-//  Created by Himalaya on 26/07/21.
-//  Copyright © 2021 L'Oréal. All rights reserved.
+//  Bool+Utils.swift
 //
 
 import Foundation

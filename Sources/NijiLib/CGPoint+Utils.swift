@@ -1,9 +1,5 @@
 //
-//  CGPoint+Extension.swift
-//  PersoLips
-//
-//  Created by vinsol on 07/10/20.
-//  Copyright © 2020 L'Oréal. All rights reserved.
+//  CGPoint+Utils.swift
 //
 
 import Foundation

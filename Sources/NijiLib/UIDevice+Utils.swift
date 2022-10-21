@@ -1,9 +1,5 @@
 //
-//  UIDevice+Extension.swift
-//  PersoLips
-//
-//  Created by Satish Chauhan on 22/01/21.
-//  Copyright © 2021 L'Oréal. All rights reserved.
+//  UIDevice+Utils.swift
 //
 
 import UIKit

@@ -1,9 +1,5 @@
 //
-//  CLLocation+Extension.swift
-//  shootproof
-//
-//  Created by Erwan TILLY on 17/01/2020.
-//  Copyright © 2020 Niji. All rights reserved.
+//  CLLocation+Utils.swift
 //
 
 import CoreLocation

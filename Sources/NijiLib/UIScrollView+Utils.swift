@@ -1,9 +1,5 @@
 //
-//  UIScrollView+Extension.swift
-//  shootproof
-//
-//  Created by Quentin EONO on 03/03/2021.
-//  Copyright © 2021 Niji. All rights reserved.
+//  UIScrollView+Utils.swift
 //
 
 import UIKit

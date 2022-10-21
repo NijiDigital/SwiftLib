@@ -1,9 +1,5 @@
 //
-//  List+Extension.swift
-//  PersoLips
-//
-//  Created by Himalaya Rajput on 24/05/21.
-//  Copyright © 2021 L'Oréal. All rights reserved.
+//  List+Utils.swift
 //
 
 import RealmSwift

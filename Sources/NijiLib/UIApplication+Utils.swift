@@ -1,5 +1,5 @@
 //
-//  UIDevice+Utils.swift
+//  UIApplication+Utils.swift
 //
 
 #if !os(macOS)

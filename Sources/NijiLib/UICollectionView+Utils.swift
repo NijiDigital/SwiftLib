@@ -1,8 +1,5 @@
 //
-//  UICollectionView+Extension.swift
-//  PersoLips
-//
-//  Created by Erwan TILLY on 03/08/2022.
+//  UICollectionView+Utils.swift
 //
 
 import Foundation

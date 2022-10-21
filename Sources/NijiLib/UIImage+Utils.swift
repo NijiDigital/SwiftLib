@@ -1,5 +1,5 @@
 //
-//  UIViewController+Extension.swift
+//  UImage+Utils.swift
 //
 
 #if !os(macOS)
