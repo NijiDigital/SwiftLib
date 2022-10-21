@@ -9,7 +9,7 @@
 import Foundation
 
 public extension Bool {
-  var toInt: Int {
-    self ? 1 : 0
-  }
+    var toInt: Int {
+        self ? 1 : 0
+    }
 }

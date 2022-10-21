@@ -9,7 +9,7 @@
 import Foundation
 
 public extension UIStackView {
-  func removeAll() {
-    arrangedSubviews.forEach { $0.removeFromSuperview() }
-  }
+    func removeAll() {
+        arrangedSubviews.forEach { $0.removeFromSuperview() }
+    }
 }

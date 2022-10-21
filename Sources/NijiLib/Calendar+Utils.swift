@@ -11,7 +11,7 @@ public extension Calendar {
         utcCalendar.timeZone = TimeZone(abbreviation: "UTC")!
         return utcCalendar
     }
-    
+
     /// Get the short weekday symbols depending the given first weekday.
     var shortWeekdaySymbolsWithFirstWeekday: [String] {
         shortWeekdaySymbols.shift(withDistance: firstWeekday - 1)
@@ -28,11 +28,11 @@ public extension Calendar {
         }
         return days
     }
-    
+
     func isDate(_ date1: Date, inSameYearAs date2: Date) -> Bool {
         component(.year, from: date1) == component(.year, from: date2)
     }
-    
+
     func isFridayOrSaturday(date: Date) -> Bool {
         let weekday = component(.weekday, from: date)
         return weekday == 6 || weekday == 7
@@ -45,6 +45,6 @@ public extension Calendar {
     }
 
     func numberOfDaysInMonth(for date: Date) -> Int {
-        return range(of: .day, in: .month, for: date)!.count
+        range(of: .day, in: .month, for: date)!.count
     }
 }

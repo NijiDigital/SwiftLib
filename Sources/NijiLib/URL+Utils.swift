@@ -9,7 +9,7 @@
 import Foundation
 
 public extension URL {
-  var isValid: Bool {
-    UIApplication.shared.canOpenURL(self)
-  }
+    var isValid: Bool {
+        UIApplication.shared.canOpenURL(self)
+    }
 }

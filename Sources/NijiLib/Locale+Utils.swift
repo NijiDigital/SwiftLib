@@ -9,43 +9,43 @@
 import Foundation
 
 public extension Locale {
-  static var isChineseSimplified: Bool {
-    Bundle.main.preferredLocalizations[0].lowercased() == "zh-hans"
-  }
+    static var isChineseSimplified: Bool {
+        Bundle.main.preferredLocalizations[0].lowercased() == "zh-hans"
+    }
 
-  static var isChineseHongKong: Bool {
-    Bundle.main.preferredLocalizations[0].lowercased() == "zh-hk"
-  }
+    static var isChineseHongKong: Bool {
+        Bundle.main.preferredLocalizations[0].lowercased() == "zh-hk"
+    }
 
-  static var isChineseTaiwan: Bool {
-    Bundle.main.preferredLocalizations[0].lowercased() == "zh-tw"
-  }
+    static var isChineseTaiwan: Bool {
+        Bundle.main.preferredLocalizations[0].lowercased() == "zh-tw"
+    }
 
-  static var isFrench: Bool {
-    current.languageCode?.lowercased() == "fr"
-  }
+    static var isFrench: Bool {
+        current.languageCode?.lowercased() == "fr"
+    }
 
-  static var isKorean: Bool {
-    current.languageCode?.lowercased() == "ko"
-  }
+    static var isKorean: Bool {
+        current.languageCode?.lowercased() == "ko"
+    }
 
-  static var isJapanese: Bool {
-    current.languageCode?.lowercased() == "ja"
-  }
+    static var isJapanese: Bool {
+        current.languageCode?.lowercased() == "ja"
+    }
 
-  static var isEnglish: Bool {
-    current.languageCode?.lowercased() == "en"
-  }
+    static var isEnglish: Bool {
+        current.languageCode?.lowercased() == "en"
+    }
 
-  static var isArabic: Bool {
-    current.languageCode?.lowercased() == "ar"
-  }
+    static var isArabic: Bool {
+        current.languageCode?.lowercased() == "ar"
+    }
 
-  static var isThai: Bool {
-    current.languageCode?.lowercased() == "th"
-  }
+    static var isThai: Bool {
+        current.languageCode?.lowercased() == "th"
+    }
 
-  static var isChinese: Bool {
-    current.languageCode?.lowercased() == "zh"
-  }
+    static var isChinese: Bool {
+        current.languageCode?.lowercased() == "zh"
+    }
 }

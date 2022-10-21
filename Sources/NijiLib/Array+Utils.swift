@@ -28,7 +28,7 @@ public extension Sequence where Iterator.Element: Hashable {
 }
 
 public extension Sequence where Element: Hashable {
-    /// Return dictionary that counts the number of occurrences for each element 
+    /// Return dictionary that counts the number of occurrences for each element
     var histogram: [Element: Int] {
         reduce(into: [:]) { counts, elem in counts[elem, default: 0] += 1 }
     }
