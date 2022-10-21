@@ -80,6 +80,8 @@ Un grand merci aux contributeurs du projet ! ❤️
 Liste des contributeurs : 
 - Mathieu VIEL
 - Nicolas RENAUD
+- Erwan TILLY
+- Guillaume COUARCH
 
 ## Licence 📝
 NijiLib est soumis à la licence MIT. Voir la [licence](LICENSE.md) pour plus d'informations.

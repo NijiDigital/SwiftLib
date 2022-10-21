@@ -1,5 +1,5 @@
-import XCTest
 @testable import NijiLib
+import XCTest
 
 final class NijiLibTests: XCTestCase {
     func testExample() throws {

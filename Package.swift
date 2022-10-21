@@ -6,14 +6,15 @@ import PackageDescription
 let package = Package(
     name: "NijiLib",
     platforms: [
-      // Only add support for iOS 13 and up.
-      .iOS(.v13)
+        // Only add support for iOS 13 and up.
+        .iOS(.v13)
     ],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "NijiLib",
-            targets: ["NijiLib"]),
+            targets: ["NijiLib"]
+        )
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -24,10 +25,12 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "NijiLib",
-            dependencies: []),
+            dependencies: []
+        ),
         .testTarget(
             name: "NijiLibTests",
-            dependencies: ["NijiLib"]),
+            dependencies: ["NijiLib"]
+        )
     ],
     swiftLanguageVersions: [.v5]
 )

@@ -3,32 +3,32 @@
 //
 
 #if !os(macOS)
-import Foundation
+    import Foundation
 
-/// Utility extension for `URLRequest`.
-public extension URLRequest {
-    /// Set the value of Content-Type HTTPHeaderField.
-    ///
-    /// - Parameters:
-    ///    - contentType: The `ContentType` of  HTTPHeaderField
-    mutating func setContentType(_ contentType: ContentType) {
-        setValue(contentType.headerValue, forHTTPHeaderField: ContentType.httpHeaderField)
-    }
+    /// Utility extension for `URLRequest`.
+    public extension URLRequest {
+        /// Set the value of Content-Type HTTPHeaderField.
+        ///
+        /// - Parameters:
+        ///    - contentType: The `ContentType` of  HTTPHeaderField
+        mutating func setContentType(_ contentType: ContentType) {
+            setValue(contentType.headerValue, forHTTPHeaderField: ContentType.httpHeaderField)
+        }
 
-    enum ContentType {
-        case json
-        case xWWWFormUrlEncoded
+        enum ContentType {
+            case json
+            case xWWWFormUrlEncoded
 
-        static let httpHeaderField = "Content-Type"
+            static let httpHeaderField = "Content-Type"
 
-        var headerValue: String {
-            switch self {
-            case .json:
-                return "application/json"
-            case .xWWWFormUrlEncoded:
-                return "application/x-www-form-urlencoded"
+            var headerValue: String {
+                switch self {
+                case .json:
+                    return "application/json"
+                case .xWWWFormUrlEncoded:
+                    return "application/x-www-form-urlencoded"
+                }
             }
         }
     }
-}
 #endif

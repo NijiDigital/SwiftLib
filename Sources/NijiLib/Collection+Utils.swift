@@ -5,7 +5,6 @@
 import Foundation
 
 public extension Collection {
-    // swiftlint:disable identifier_name
     func chunk(n: Int) -> [SubSequence] {
         var res: [SubSequence] = []
         var i = startIndex
