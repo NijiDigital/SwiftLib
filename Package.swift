@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "NijiLib",
+    name: "SwiftLib",
     platforms: [
       // Only add support for iOS 13 and up.
       .iOS(.v13)
@@ -12,8 +12,8 @@ let package = Package(
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
-            name: "NijiLib",
-            targets: ["NijiLib"]),
+            name: "SwiftLib",
+            targets: ["SwiftLib"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -23,11 +23,11 @@ let package = Package(
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
-            name: "NijiLib",
+            name: "SwiftLib",
             dependencies: []),
         .testTarget(
-            name: "NijiLibTests",
-            dependencies: ["NijiLib"]),
+            name: "SwiftLibTests",
+            dependencies: ["SwiftLib"]),
     ],
     swiftLanguageVersions: [.v5]
 )
