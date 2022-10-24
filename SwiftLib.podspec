@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'SwiftLib'
-  s.version          = '0.0.2'
+  s.version          = '0.1.0'
   s.summary          = 'Librairie de Niji pour les extensions courantes.'
   s.homepage         = 'https://github.com/NijiDigital/SwiftLib'
   s.license          = { :type => 'MIT', :file => 'LICENSE.md' }
